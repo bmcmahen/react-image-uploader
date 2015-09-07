@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import ImageUploader from 'react-image-uploader';
 
 function uploadImage(file, fn) {
-  console.log('upload file', file)
   setTimeout(() => {
     fn(new Error('doh!'))
   }, 1000)
