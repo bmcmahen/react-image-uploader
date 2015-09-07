@@ -11,11 +11,11 @@ A customizable react library for uploading multiple images.
 import ImageUploader from 'react-image-uploader'
 import React from 'react'
 
-function uploadImage(file, fn) {
+function uploadImage(file, done, progress) {
   // do your upload logic here
   let error = null
   let uploadedImageURL = 'dog.jpg'
-  fn(error, uploadedImageURL)
+  done(error, uploadedImageURL)
 }
 
 class Demo extends React.Component {
